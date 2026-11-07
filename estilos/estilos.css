@@ -1,6 +1,29 @@
 
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
 main {
     max-width: 840px;
+}
+
+h1 {
+    color: #333;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid #333;
+    padding: 2px;
+    box-shadow: 0 0 10px gray;
 }
 
 aside {
@@ -14,11 +37,6 @@ aside {
 
 aside img {
     width: 200px;
-    height: auto;
-}
-
-main img {
-    width: 150px;
     height: auto;
 }
 
