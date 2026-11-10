@@ -1,4 +1,17 @@
 
+/* =========================================
+   WDD130 - Semana 03
+   Folha de estilos da página inicial
+   ========================================= */
+
+/* Seletor Universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navegação */
 nav {
     background-color: #333;
     padding: 10px;
@@ -10,42 +23,83 @@ nav a {
     padding: 10px;
 }
 
+/* Conteúdo Principal */
 main {
     max-width: 840px;
 }
 
 h1 {
     color: #333;
+    margin-bottom: 1rem;
 }
 
+/* Fotografia pessoal */
 main img {
     width: 150px;
     height: auto;
     border: 1px solid #333;
     padding: 2px;
     box-shadow: 0 0 10px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
+/* Informações sobre Minas Gerais */
 aside {
     width: 300px;
-    margin: 10px;
-    border: 1px solid #333;
-    padding: 15px;
-    background-color: #eee;
-    color: #333;
+    position: relative;
 }
 
+/* Fotografia do Parque do Sabiá */
 aside img {
     width: 200px;
     height: auto;
+    display: block;
+    margin: 0 auto 1rem;
 }
 
+/* Título sobreposto à imagem */
+aside h2 {
+    position: absolute;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 190px;
+    color: #fff;
+    background-color: rgb(0 0 0 / 65%);
+    padding: 5px;
+    font-size: 1rem;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Parágrafos */
 p {
     padding: 0;
 }
 
+/* Rodapé */
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+    padding: 1rem;
+}
+
+/* Seletores de Classe */
+.caixa {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+
+/* Lista de templos */
+ul.caixa {
+    padding-left: 2rem;
+}
+
+ul.caixa li {
+    margin-bottom: 0.5rem;
 }
